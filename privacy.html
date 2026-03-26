@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScoopAI – Privacy Policy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0d0f0e;
+      --surface: #151815;
+      --border: #1f231f;
+      --accent: #c8f135;
+      --text-primary: #e8ede8;
+      --text-secondary: #7a8a7a;
+      --card: #111311;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(13,15,14,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .logo-dot {
+      width: 28px; height: 28px;
+      background: var(--accent);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .logo-dot span { font-size: 14px; }
+    nav h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: 16px; font-weight: 700;
+      color: var(--text-primary);
+    }
+    nav .badge {
+      margin-left: auto;
+      font-size: 11px;
+      color: var(--text-secondary);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 72px 24px 48px;
+      max-width: 760px; margin: 0 auto;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-tag {
+      display: inline-block;
+      font-size: 11px; font-weight: 500;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(200,241,53,0.08);
+      border: 1px solid rgba(200,241,53,0.2);
+      padding: 5px 12px; border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    .hero h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 800; line-height: 1.15;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+    }
+    .hero h2 em { color: var(--accent); font-style: normal; }
+    .hero p {
+      color: var(--text-secondary);
+      font-size: 14px; max-width: 520px;
+    }
+    .hero .meta {
+      margin-top: 24px;
+      display: flex; gap: 20px; flex-wrap: wrap;
+    }
+    .meta-item {
+      font-size: 12px; color: var(--text-secondary);
+      display: flex; align-items: center; gap: 6px;
+    }
+    .meta-item::before {
+      content: '';
+      width: 6px; height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* CONTENT */
+    .content {
+      max-width: 760px; margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    /* SECTION */
+    .section {
+      margin-top: 52px;
+    }
+    .section-header {
+      display: flex; align-items: center; gap: 14px;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-num {
+      width: 32px; height: 32px; flex-shrink: 0;
+      background: rgba(200,241,53,0.1);
+      border: 1px solid rgba(200,241,53,0.25);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Syne', sans-serif;
+      font-size: 13px; font-weight: 700;
+      color: var(--accent);
+    }
+    .section-header h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 17px; font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    p { color: var(--text-secondary); margin-bottom: 14px; }
+    p:last-child { margin-bottom: 0; }
+
+    /* TABLE */
+    .data-table {
+      width: 100%; border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 13px;
+    }
+    .data-table th {
+      background: var(--surface);
+      color: var(--text-secondary);
+      font-weight: 500;
+      text-align: left;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      font-family: 'DM Sans', sans-serif;
+    }
+    .data-table td {
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      vertical-align: top;
+    }
+    .data-table tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+
+    /* HIGHLIGHT BOX */
+    .highlight {
+      background: rgba(200,241,53,0.05);
+      border: 1px solid rgba(200,241,53,0.15);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+    .highlight strong { color: var(--accent); }
+
+    /* LIST */
+    ul.styled {
+      list-style: none;
+      margin: 12px 0;
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    ul.styled li {
+      color: var(--text-secondary);
+      font-size: 14px;
+      padding-left: 18px;
+      position: relative;
+    }
+    ul.styled li::before {
+      content: '→';
+      position: absolute; left: 0;
+      color: var(--accent);
+      font-size: 12px;
+    }
+
+    /* CONTACT */
+    .contact-card {
+      margin-top: 52px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px;
+    }
+    .contact-card h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 16px; font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+    }
+    .contact-card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .contact-card a:hover { text-decoration: underline; }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 24px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+    footer span { color: var(--accent); }
+
+    @media (max-width: 600px) {
+      .hero { padding: 48px 20px 36px; }
+      .content { padding: 0 20px 60px; }
+      .data-table { font-size: 12px; }
+      .data-table th, .data-table td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo-dot"><span>🥗</span></div>
+  <h1>ScoopAI</h1>
+  <span class="badge">Legal</span>
+</nav>
+
+<div class="hero">
+  <div class="hero-tag">Privacy Policy</div>
+  <h2>Your data,<br><em>your control.</em></h2>
+  <p>We believe privacy is a right, not a feature. Here's exactly what we collect, why, and how we protect it.</p>
+  <div class="meta">
+    <span class="meta-item">Effective: January 1, 2025</span>
+    <span class="meta-item">Last updated: March 2025</span>
+    <span class="meta-item">Applies to: ScoopAI App</span>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <h3>Who We Are</h3>
+    </div>
+    <p>ScoopAI ("we", "our", or "us") is a mobile application that helps users track their daily nutrition, analyze meals through AI-powered photo recognition, and connect with personal trainers. ScoopAI is operated by ScoopAI Labs.</p>
+    <p>This Privacy Policy explains how we collect, use, disclose, and protect information when you use our mobile application and related services.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">2</div>
+      <h3>Information We Collect</h3>
+    </div>
+    <p>We collect the following categories of information:</p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>What we collect</th>
+          <th>Why</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Account</strong></td>
+          <td>Email address, display name, profile photo</td>
+          <td>Authentication and personalization</td>
+        </tr>
+        <tr>
+          <td><strong>Health & Diet</strong></td>
+          <td>Food logs, calorie/protein intake, supplement records, body goals</td>
+          <td>Core nutrition tracking features</td>
+        </tr>
+        <tr>
+          <td><strong>Photos</strong></td>
+          <td>Meal photos you choose to scan (processed, not permanently stored)</td>
+          <td>AI food recognition</td>
+        </tr>
+        <tr>
+          <td><strong>Device</strong></td>
+          <td>FCM push token, OS version, device type</td>
+          <td>Push notifications</td>
+        </tr>
+        <tr>
+          <td><strong>Usage</strong></td>
+          <td>App interaction logs, crash reports</td>
+          <td>Improving app stability</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="highlight">
+      <strong>Note:</strong> We do not collect payment information. We do not sell your personal data to third parties. Health and diet data is treated as sensitive information.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <h3>How We Use Your Information</h3>
+    </div>
+    <p>We use the information we collect to:</p>
+    <ul class="styled">
+      <li>Provide, maintain, and improve the ScoopAI app and its features</li>
+      <li>Analyze meal photos using AI to identify food items and estimate nutrition</li>
+      <li>Generate weekly nutrition reports and progress insights</li>
+      <li>Enable trainer-member connections and communication features</li>
+      <li>Send push notifications you have opted into</li>
+      <li>Respond to your support requests and inquiries</li>
+      <li>Monitor for technical issues and ensure app security</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">4</div>
+      <h3>Third-Party Services</h3>
+    </div>
+    <p>We use the following third-party services to operate ScoopAI. Each has its own privacy policy:</p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Provider</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Firebase Auth</td>
+          <td>Google LLC</td>
+          <td>User authentication</td>
+        </tr>
+        <tr>
+          <td>Cloud Firestore</td>
+          <td>Google LLC</td>
+          <td>Data storage</td>
+        </tr>
+        <tr>
+          <td>Firebase Cloud Functions</td>
+          <td>Google LLC</td>
+          <td>Backend processing, scheduled reports</td>
+        </tr>
+        <tr>
+          <td>Firebase Cloud Messaging</td>
+          <td>Google LLC</td>
+          <td>Push notifications</td>
+        </tr>
+        <tr>
+          <td>Gemini API</td>
+          <td>Google LLC</td>
+          <td>AI-powered food analysis</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">5</div>
+      <h3>Data Retention & Deletion</h3>
+    </div>
+    <p>We retain your personal data for as long as your account is active. You may request deletion of your account and all associated data at any time by contacting us at the email below.</p>
+    <p>Upon receiving a deletion request, we will permanently delete your data within 30 days, except where retention is required by law.</p>
+    <div class="highlight">
+      <strong>Your rights:</strong> You have the right to access, correct, export, or delete your personal data at any time.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">6</div>
+      <h3>Medical Disclaimer</h3>
+    </div>
+    <p>The nutritional analysis, protein tracking, and dietary information provided by ScoopAI is for <strong style="color:var(--text-primary)">general informational purposes only</strong> and does not constitute medical advice, diagnosis, or treatment.</p>
+    <p>Always seek the advice of your physician, registered dietitian, or other qualified health provider with any questions you may have regarding a medical condition or dietary plan. Never disregard professional medical advice or delay seeking it because of something you have read or seen in this app.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">7</div>
+      <h3>Children's Privacy</h3>
+    </div>
+    <p>ScoopAI is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that a child under 13 has provided us with personal information, we will take steps to delete such information.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">8</div>
+      <h3>Security</h3>
+    </div>
+    <p>We implement industry-standard security measures to protect your information, including encrypted data transmission (HTTPS/TLS), Firebase security rules that restrict data access to authorized users only, and regular security reviews.</p>
+    <p>However, no method of transmission over the internet or electronic storage is 100% secure. We cannot guarantee absolute security.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">9</div>
+      <h3>Changes to This Policy</h3>
+    </div>
+    <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by updating the "Last updated" date at the top of this page and, where appropriate, through an in-app notification.</p>
+    <p>Your continued use of ScoopAI after changes become effective constitutes acceptance of the updated policy.</p>
+  </div>
+
+  <div class="contact-card">
+    <h3>Questions or concerns?</h3>
+    <p style="color:var(--text-secondary); font-size:14px; margin-bottom:10px;">If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
+    <a href="mailto:privacy@scoopai.app">privacy@scoopai.app</a>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2025 <span>ScoopAI Labs</span>. All rights reserved.
+</footer>
+
+</body>
+</html>
