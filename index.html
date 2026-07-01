@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScoopAI – Support</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0d0f0e;
+      --surface: #151815;
+      --border: #1f231f;
+      --accent: #c8f135;
+      --text-primary: #e8ede8;
+      --text-secondary: #7a8a7a;
+      --card: #111311;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .nav-logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 18px;
+      color: var(--accent);
+      text-decoration: none;
+      letter-spacing: -0.3px;
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 64px 24px 96px;
+    }
+
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(32px, 6vw, 48px);
+      color: var(--text-primary);
+      letter-spacing: -1px;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    .tagline {
+      font-size: 17px;
+      color: var(--text-secondary);
+      margin-bottom: 56px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 20px;
+    }
+
+    .card h2 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: var(--text-secondary);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .contact-link {
+      display: inline-block;
+      margin-top: 12px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+    }
+    .contact-link:hover { text-decoration: underline; }
+
+    .links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+
+    .link-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-primary);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .link-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      color: var(--text-secondary);
+      font-size: 13px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">ScoopAI</a>
+  </nav>
+
+  <main>
+    <h1>Support</h1>
+    <p class="tagline">AI-powered nutrition and supplement tracking.</p>
+
+    <div class="card">
+      <h2>Contact Us</h2>
+      <p>Have a question, found a bug, or need help with your account? We typically respond within 1–2 business days.</p>
+      <a class="contact-link" href="mailto:dotflowlabs@gmail.com">dotflowlabs@gmail.com</a>
+    </div>
+
+    <div class="card">
+      <h2>Legal</h2>
+      <p>Learn how ScoopAI handles your data and the terms that govern your use of the app.</p>
+      <div class="links">
+        <a class="link-btn" href="privacy.html">Privacy Policy</a>
+        <a class="link-btn" href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 DotFlow Labs. All rights reserved.
+  </footer>
+
+</body>
+</html>
